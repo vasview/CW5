@@ -89,6 +89,7 @@ header {
   left: 12px;
 }
 .nav-submenu {
+  display: none;
   position: absolute;
   top: 49px;
   left: 0;

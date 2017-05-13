@@ -11,4 +11,13 @@ $(document).ready(function(){
 			}		
 		});
 
+	$('.top-nav__menu > li').on('click',function(){
+		$('.nav-submenu').hide();
+		$(this).children(".nav-submenu").show();
+	});
+
+	$('.top-submenu li').on('click',function(){
+		$(this).parents('.nav-submenu').css('display','none');
+	});	
+	
 });
