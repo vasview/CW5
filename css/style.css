@@ -1,12 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
 body {
-	font-family: arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	font-family: 'Open Sans', arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 	color: #000;
-	background: #fff;
-	font-size: 14px;
+	background: #f3f3f3;
+	font-size: 13px;
 	line-height: 1.3;
-  min-width: 800px;
+  min-width: 320px;
 }
-
 .container {
-
+  max-width: 1174px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+header {
+  height: 80px;
+  background: #76c7c0;
+  background-image: url(../img/top_bg_line.png);
+  background-position-y: bottom;
+  background-repeat: repeat-x;
+}
+.header__container {
+  height: 80px;
+}
+.logo {
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 20px 0 0;
+  float: left;
+}
+.logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo a span {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: none;
+}
+.top-nav {
+  height: 100%;
+  margin: 0;
+  padding-top: 24px;
+  width: auto;
+  float: right;
+}
+.top-nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top-nav__menu > li {
+  margin: 0;
+  padding: 10px 1px 12px;;
+  width: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+.top-nav__menu > li > a{
+  margin: 0;
+  padding: 10px 19px 12px 29px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+.top-nav__menu > li:hover > a {
+  background: #e8645a;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+  -moz-box-shadow:    inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+  box-shadow:         inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+}
+.top-nav__menu > li:hover > a::before{
+  font-family: FontAwesome;
+  content: "\f107";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.nav-submenu {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  background: #e2534b;
+  border-radius: 6px;
+  width: 200px;
+  height: auto;
+}
+.nav-submenu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #e2534b transparent;
+  z-index: 10px;
+}
+.top-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top-submenu li {
+  width: 100%;
+  display: inline-block;
+  padding: 5px;
+}
+.top-submenu li a {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  background: #e5655d;
+  border-radius: 3px;
 }
