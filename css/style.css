@@ -44,7 +44,7 @@ header {
 }
 .top-nav {
   height: 100%;
-  margin: 0;
+  margin: 0 19px 0 0;
   padding-top: 24px;
   width: auto;
   float: right;
@@ -64,7 +64,7 @@ header {
 }
 .top-nav__menu > li > a{
   margin: 0;
-  padding: 10px 19px 12px 29px;
+  padding: 8px 19px 8px 29px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -95,7 +95,7 @@ header {
   left: 0;
   background: #e2534b;
   border-radius: 6px;
-  width: 200px;
+  width: 180px;
   height: auto;
   z-index: 100;
 }
@@ -145,7 +145,7 @@ header {
   transform: translateX(-50%);
 }
 .slider__inner--red {
-  top: 20%;
+  top: 30%;
   margin: 0;
   padding: 0;
   background: #e2534b;
@@ -159,10 +159,10 @@ header {
   font-size: 50px;
   color: #fff;
   margin: 0;
-  padding: 5px 8px 5px 14px;
+  padding: 2px 8px 2px 17px;
 }
 .slider__inner--transparent {
-  top: 38%;
+  top: 44%;
   margin: 0;
   padding: 0;
   background: rgba(30, 32, 41, 0.7);
@@ -177,7 +177,7 @@ header {
   line-height: 25px;
   color: #fff;
   margin: 0;
-  padding: 14px 37px 18px;
+  padding: 13px 1px 12px;
 }
 .slick-arrow {
   position: absolute;
@@ -227,7 +227,7 @@ header {
   margin-right: -12px;
 }
 .slider-block__dots {
-  height: 51px;
+  height: 43px;
   width: auto;
   text-align: center;
 }
@@ -314,6 +314,7 @@ header {
 }
 .service-item {
   position: relative;
+  margin-bottom: 50px;
   width: 270px;
   height: 310px;
   border-radius: 4px;
