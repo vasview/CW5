@@ -132,3 +132,77 @@ header {
   background: #e5655d;
   border-radius: 3px;
 }
+.slider-block {
+  position: relative;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 50px;
+  height: 60px;
+  background: #e8645a;
+  border: none;
+  font-size: 0;
+  -webkit-box-shadow: inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+  -moz-box-shadow:    inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+  box-shadow:         inset 0px -5px 2px 0px rgba(226, 83, 75, 1);
+}
+.slick-prev.slick-arrow  {
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.slick-next.slick-arrow  {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.slick-prev.slick-arrow::after {
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: #fff;
+  content: "\f100";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+}
+.slick-next.slick-arrow::after {
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: #fff;
+  content: "\f101";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -12px;
+  margin-right: -12px;
+}
+.slider-block__dots {
+  height: 51px;
+  width: auto;
+  text-align: center;
+}
+.slick-dots {
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+.slick-dots li {
+  width: 60px;
+  height: 5px;
+  background: #b0b8b9;
+  margin-right: 8px;
+  padding: 0;
+  display: inline-block;
+}
+.slick-dots li.slick-active {
+  background: #e2534b;
+}
+.slick-dots li button {
+  display: none;
+}

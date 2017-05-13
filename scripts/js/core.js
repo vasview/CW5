@@ -20,4 +20,9 @@ $(document).ready(function(){
 		$(this).parents('.nav-submenu').css('display','none');
 	});	
 	
+	$('.slider-block').slick({
+    		arrows: true,
+    		appendDots: $('.slider-block__dots'),
+    		dots: true
+   		});
 });
